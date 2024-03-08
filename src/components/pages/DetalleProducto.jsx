@@ -1,5 +1,5 @@
 import { Container, Card, Row, Col } from "react-bootstrap";
-
+import { Link } from "react-router-dom";
 const DetalleProducto = () => {
   return (
     <Container className="my-3 mainSection">
