@@ -1,5 +1,5 @@
 import { Container, Row } from "react-bootstrap";
-import CardProducto from "./producto/CardProducto";
+// import CardProducto from "./producto/CardProducto";
 
 const Inicio = () => {
   return (
@@ -14,11 +14,11 @@ const Inicio = () => {
         <hr />
     
           <Row>
+            {/* <CardProducto></CardProducto>
             <CardProducto></CardProducto>
             <CardProducto></CardProducto>
             <CardProducto></CardProducto>
-            <CardProducto></CardProducto>
-            <CardProducto></CardProducto>
+            <CardProducto></CardProducto> */}
           </Row>
        
       </Container>
