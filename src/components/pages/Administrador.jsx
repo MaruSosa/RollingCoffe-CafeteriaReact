@@ -1,5 +1,5 @@
 import { Button, Table } from "react-bootstrap";
-// import ItemProducto from "./producto/ItemProducto";
+import ItemProducto from "./producto/ItemProducto";
 
 const Administrador = () => {
   return (
@@ -7,7 +7,6 @@ const Administrador = () => {
       <div className="d-flex justify-content-between align-items-center mt-5">
         <h1 className="display-4 ">Productos disponibles</h1>
         <Button variant="primary">
-          agregar
           <i className="bi bi-file-earmark-plus"></i>
         </Button>
       </div>
@@ -24,10 +23,10 @@ const Administrador = () => {
           </tr>
         </thead>
         <tbody>
-          {/* <ItemProducto></ItemProducto>
           <ItemProducto></ItemProducto>
           <ItemProducto></ItemProducto>
-          <ItemProducto></ItemProducto> */}
+          <ItemProducto></ItemProducto>
+          <ItemProducto></ItemProducto>
         </tbody>
       </Table>
     </section>
