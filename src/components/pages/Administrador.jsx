@@ -1,6 +1,7 @@
 import { Button, Table } from "react-bootstrap";
 import ItemProducto from "./producto/ItemProducto";
 import { Link } from "react-router-dom";
+import { leerProductosAPI } from "../../helpers/queries";
 const Administrador = () => {
   return (
     <section className="container mainSection">
