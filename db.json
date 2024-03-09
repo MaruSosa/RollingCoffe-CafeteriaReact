@@ -1,30 +1,39 @@
 {
-    "productos":[
-        {
-            "nombreProducto": "café",
-            "precio": 1000,
-            "categoria": "Infusiones",
-            "descripcion-breve":"cafe rico",
-            "descripcion-amplia": "bebida de café concentrada y aromática que se prepara haciendo pasar agua caliente a alta presión por granos de café muy finamente molidos.",
-            "imagen":"https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-            "disponibilidad": true,
-            "id":"1"
-        },
-        {
-            "nombreProducto": "Té",
-            "precio": 300,
-            "categoria": "Infusiones",
-            "descripcion_breve":"té rico",
-            "descripcion_amplia": "bebida de café concentrada y aromática que se prepara haciendo pasar agua caliente a alta presión por granos de café muy finamente molidos.",
-            "imagen":"https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-            "disponibilidad": true,
-            "id":"2"
-        }
-    ],
-    "usuarios":[
-        {
-            "email": "prueba@mail.com",
-            "password": "123" 
-        }
-    ]
+  "productos": [
+    {
+      "nombreProducto": "café",
+      "precio": 1000,
+      "categoria": "Infusiones",
+      "descripcion-breve": "cafe rico",
+      "descripcion-amplia": "bebida de café concentrada y aromática que se prepara haciendo pasar agua caliente a alta presión por granos de café muy finamente molidos.",
+      "imagen": "https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "disponibilidad": true,
+      "id": "1"
+    },
+    {
+      "nombreProducto": "Té",
+      "precio": 300,
+      "categoria": "Infusiones",
+      "descripcion_breve": "té rico",
+      "descripcion_amplia": "bebida de café concentrada y aromática que se prepara haciendo pasar agua caliente a alta presión por granos de café muy finamente molidos.",
+      "imagen": "https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "disponibilidad": true,
+      "id": "2"
+    },
+    {
+      "id": "ed7d",
+      "nombreProducto": "capuccino",
+      "precio": "1500",
+      "imagen": "https://cafeselcriollo.com/wp-content/uploads/2022/05/capuchino.jpg",
+      "categoria": "Infusiones",
+      "descripcion_breve": "capuccino suave ",
+      "descripcion_amplia": "El cappuccino tiene un sabor equilibrado entre la intensidad del espresso y la suavidad de la leche al vapor y la espuma. La combinación de estos elementos proporciona una experiencia de café rica y compleja."
+    }
+  ],
+  "usuarios": [
+    {
+      "email": "prueba@mail.com",
+      "password": "123"
+    }
+  ]
 }
