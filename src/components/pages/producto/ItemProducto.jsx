@@ -19,7 +19,7 @@ const ItemProducto = ({producto, setProductos}) => {
 
         const respuesta = await borrarProductoAPI(producto.id)
         if(respuesta.status === 200){
-          //falta actualizar la tabla
+          // actualiza la tabla
          const productosActualizados = await leerProductosAPI();
          setProductos(productosActualizados);
 
