@@ -28,12 +28,22 @@
       "categoria": "Infusiones",
       "descripcion_breve": "capuccino suave ",
       "descripcion_amplia": "El cappuccino tiene un sabor equilibrado entre la intensidad del espresso y la suavidad de la leche al vapor y la espuma. La combinación de estos elementos proporciona una experiencia de café rica y compleja."
+    },
+    {
+      "id": "3058",
+      "nombreProducto": "cafe con leche",
+      "precio": "1200",
+      "imagen": "https://images.pexels.com/photos/3020919/pexels-photo-3020919.jpg",
+      "categoria": "Infusiones",
+      "descripcion_breve": "cafe con leche simple",
+      "descripcion_amplia": "La mezcla resultante tiene un equilibrio entre la intensidad y amargor característicos del café y la suavidad y cremosidad proporcionadas por la leche. Esta combinación crea una bebida reconfortante, con un sabor robusto pero a la vez suave, y a menudo se sirve en tazas grandes. La leche utilizada puede ser entera, desnatada o incluso alternativas como la leche de almendra o soja, dependiendo de las preferencias dietéticas o el gusto personal."
     }
   ],
   "usuarios": [
     {
       "email": "prueba@mail.com",
-      "password": "123"
+      "password": "123",
+      "id": "660a"
     }
   ]
 }
