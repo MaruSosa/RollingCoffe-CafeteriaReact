@@ -13,6 +13,17 @@ export const leerProductosAPI = async()=>{
     }
 }
 
+//GET de 1 producto
+export const obtenerProductoAPI = async(id)=>{
+    try{
+        const respuesta = await fetch(`${URI_PRODUCTOS}/${id}`);
+        // const productoBuscado = await respuesta.json();
+        return respuesta;
+    }catch (error){
+        console.log(error)
+    }
+}
+
 // POST
 export const crearProductoAPI = async(productoNuevo)=>{
     try {
@@ -29,6 +40,8 @@ export const crearProductoAPI = async(productoNuevo)=>{
         console.log(error)
     }
 }
+
+
 // DELETE
 export const borrarProductoAPI = async(id)=>{
     try {
@@ -37,6 +50,23 @@ export const borrarProductoAPI = async(id)=>{
         })
         console.log(respuesta);
         return respuesta
+    } catch (error) {
+        console.log(error)
+    }
+}
+
+//PUT
+export const editarProductoAPI = async(id, producto) =>{
+    try {
+        const respuesta = await fetch(`${URI_PRODUCTOS}/${id}`,{
+            method: "PUT",
+            headers:{
+                "Content-Type":"application/json"
+            },
+            body: JSON.stringify(producto)
+        })
+        console.log(respuesta);
+        return respuesta;
     } catch (error) {
         console.log(error)
     }

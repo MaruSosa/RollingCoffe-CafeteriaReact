@@ -15,6 +15,7 @@ const FormularioProducto = ({ editar, titulo }) => {
     handleSubmit,
     formState: { errors },
     reset,
+    //carga los datos del producto a editar
     setValue,
   } = useForm();
   const { id } = useParams();
