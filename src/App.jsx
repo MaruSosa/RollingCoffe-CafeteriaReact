@@ -16,27 +16,13 @@ function App() {
     <Menu></Menu>
     {/* <Menu usuarioLogueado = {usuarioLogueado} setUsuarioLogueado={setUsuarioLogueado}></Menu> */}
     <Routes>
-      <Route exact path="/" element={<Inicio></Inicio>}></Route>
-      {/* <Route
-        exact
-        path="/detalleProducto/:id"
-        element={<DetalleProducto></DetalleProducto>}
-      ></Route> */}
-      {/* <Route exact path="/login" element={<Login setUsuarioLogueado = {setUsuarioLogueado}></Login>}></Route> */}
-      {/* <Route
-        exact
-        path="/administrador/*"
-        element={
-          <RutasProtegidas>
-            <RutasAdmin></RutasAdmin>
-          </RutasProtegidas>
-        }
-      ></Route> */}
-      <Route path="/administrador" element={<Administrador></Administrador>}></Route>
-      <Route exact path="/detalleProducto" element={<DetalleProducto></DetalleProducto>}></Route>
-      <Route exact path="/administrador/crear" element={<FormularioProducto  editar={false} titulo='Nuevo producto'></FormularioProducto>}></Route>
+    <Route exact path="/" element={<Inicio></Inicio>}></Route>
+        <Route exact path="/detalleProducto/:id" element={<DetalleProducto></DetalleProducto>}></Route>
+        {/* <Route exact path="/login" element={<Login></Login>}></Route> */}
+        <Route exact path="/administrador" element={<Administrador></Administrador>}></Route>
+        <Route exact path="/administrador/crear" element={<FormularioProducto editar={false} titulo='Nuevo producto'></FormularioProducto>}></Route>
         <Route exact path="/administrador/editar/:id" element={<FormularioProducto editar={true} titulo='Editar producto'></FormularioProducto>}></Route>
-      <Route path="/error404" element={<Error404></Error404>}></Route>
+        <Route path="*" element={<Error404></Error404>}></Route>
     </Routes>
     <Footer></Footer>
   </BrowserRouter>
