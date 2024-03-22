@@ -71,3 +71,18 @@ export const editarProductoAPI = async(id, producto) =>{
         console.log(error)
     }
 }
+//cuando tenga el backend realizar una peticion POST para el login
+
+const admin = {
+    email: "admin@rollingcode.com",
+    password: "123Aa123",
+  };
+  
+  export const login = (usuario) => {
+    if (usuario.email === admin.email && usuario.password === admin.password) {
+      sessionStorage.setItem("inicioRollingCoffe", JSON.stringify(usuario.email));
+      return true;
+    } else {
+      return false;
+    }
+  };
