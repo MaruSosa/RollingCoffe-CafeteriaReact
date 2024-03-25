@@ -10,27 +10,39 @@ import Error404 from "./components/pages/Error404";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import DetalleProducto from "./components/pages/DetalleProducto";
 import Login from "./components/pages/Login";
-// import RutasProtegidas from "./components/routes/RutasProtegidas";
-// import RutasAdmin from "./components/routes/RutasAdmin";
-// import { useState } from "react";
+import RutasProtegidas from "./components/routes/RutasProtegidas";
+import RutasAdmin from "./components/routes/RutasAdmin";
+import { useState } from "react";
+
 function App() {
- 
+ const usuario = JSON.parse(sessionStorage.getItem('inicioRollingCoffe')) || "";
+ const [usuarioLogueado, setUsuarioLogueado] = useState(usuario)
+
   return (
     <BrowserRouter>
-    <Menu></Menu>
-    {/* <Menu usuarioLogueado = {usuarioLogueado} setUsuarioLogueado={setUsuarioLogueado}></Menu> */}
-    <Routes>
-    <Route exact path="/" element={<Inicio></Inicio>}></Route>
-        <Route exact path="/detalleProducto/:id" element={<DetalleProducto></DetalleProducto>}></Route>
-        <Route exact path="/login" element={<Login></Login>}></Route>
-        <Route exact path="/administrador" element={<Administrador></Administrador>}></Route>
-        <Route exact path="/administrador/crear" element={<FormularioProducto editar={false} titulo='Nuevo producto'></FormularioProducto>}></Route>
-        <Route exact path="/administrador/editar/:id" element={<FormularioProducto editar={true} titulo='Editar producto'></FormularioProducto>}></Route>
+        <Menu usuarioLogueado = {usuarioLogueado} setUsuarioLogueado={setUsuarioLogueado}></Menu>
+      <Routes>
+        <Route exact path="/" element={<Inicio></Inicio>}></Route>
+        <Route
+          exact
+          path="/detalleProducto/:id"
+          element={<DetalleProducto></DetalleProducto>}
+        ></Route>
+        <Route exact path="/login" element={<Login setUsuarioLogueado = {setUsuarioLogueado}></Login>}></Route>
+        <Route
+          exact
+          path="/administrador/*"
+          element={
+            <RutasProtegidas>
+              <RutasAdmin></RutasAdmin>
+            </RutasProtegidas>
+          }
+        ></Route>
         <Route path="*" element={<Error404></Error404>}></Route>
-    </Routes>
-    <Footer></Footer>
-  </BrowserRouter>
+      </Routes>
+      <Footer></Footer>
+    </BrowserRouter>
   );
 }
 
-export default App
+export default App;

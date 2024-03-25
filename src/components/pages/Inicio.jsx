@@ -17,6 +17,7 @@ const Inicio = () => {
       console.log(error);
     }
   };
+
   return (
     <section className="mainSection">
       <img
