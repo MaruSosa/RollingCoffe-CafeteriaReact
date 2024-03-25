@@ -8,15 +8,6 @@
       "descripcion_breve": "té delicioso",
       "descripcion_amplia": "bebida de café concentrada y aromática que se prepara haciendo pasar agua caliente a alta presión por granos de café muy finamente molidos.",
       "id": "2"
-    },
-    {
-      "id": "c313",
-      "nombreProducto": "medialuna",
-      "precio": "500",
-      "imagen": "https://www.gastrolabweb.com/u/fotografias/m/2022/1/30/f1280x720-24971_156646_5050.jpg",
-      "categoria": "dulce",
-      "descripcion_breve": "medialunas",
-      "descripcion_amplia": "Las medialunas son un acompañamiento popular para el desayuno o la merienda en muchos lugares. También son una deliciosa opción para disfrutar con café o té."
     }
   ],
   "usuarios": [
